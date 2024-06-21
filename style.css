@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  position: relative;
+}
+
+/* Hero Section */
+
+.hero-section {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* Navbar */
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 100px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 0.3s;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.nav-links a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Main Section */
+
+.main-section {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  top: 80%;
+}
+
+/* Head Section */
+
+.head-div {
+  position: relative;
+  background-color: #fff;
+  text-align: center;
+  border: 1.5px solid hsla(0, 0%, 48%, 0.202);
+  border-radius: 10px;
+}
+
+.head-div svg {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.inside-head-heading-div {
+  padding: 2em 0;
+}
+
+.inside-head-button-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50%;
+  margin-top: 2em;
+  padding: 0 2em;
+}
+
+/* Statistics Section */
+
+.data-div {
+  border: 1.5px solid hsla(0, 0%, 48%, 0.202);
+  border-radius: 10px;
+  padding: 2em;
+  margin-top: 1em;
+}
+
+.inside-data-div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10%;
+}
+
+.data-div-second {
+  border-left: 1.5px solid hsla(0, 0%, 48%, 0.202);
+  border-right: 1.5px solid hsla(0, 0%, 48%, 0.202);
+  padding: 0 2em;
+}
+
+.data-bar-div {
+  display: flex;
+  height: 5px;
+  margin-top: 1em;
+}
+
+.left-bar {
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 10px;
+  width: 75%;
+  height: 5px;
+}
+
+.right-bar {
+  background-color: hsla(0, 0%, 48%, 0.202);
+  border-radius: 0 10px 10px 0;
+  width: 25%;
+  height: 5px;
+}
+
+/* About This Project Section */
+
+.about-this-project {
+  border: 1.5px solid hsla(0, 0%, 48%, 0.202);
+  border-radius: 10px;
+  margin-top: 1em;
+  padding: 2em 2em 4em 2em;
+}
+
+.about-this-project h2 {
+  margin-bottom: 0.5em;
+}
+
+.about-this-project p {
+  padding-top: 1em;
+}
+
+/* Reward-card Section */
+
+.reward-card {
+  border: 1.5px solid hsla(0, 0%, 48%, 0.202);
+  border-radius: 10px;
+  margin-top: 2em;
+  padding: 1em 2em;
+}
+
+.reward-card p {
+  padding: 0.25em 0;
+}
+
+.inside-div-reward-card p {
+  padding-top: 0;
+}
+
+.inside-div-reward-card {
+  padding: 1em 0;
+}
+
+.inside-div-reward-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-part-div-inside-div-reward-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
