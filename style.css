@@ -9,6 +9,16 @@ body {
   position: relative;
 }
 
+.stop-scroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+#backdrop.visible {
+  display: block;
+  pointer-events: all;
+}
+
 /* Hero Section */
 
 .hero-section {
@@ -50,10 +60,9 @@ a {
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
-  transition: 0.3s;
   padding: 0.6rem 1.3rem;
   border-radius: 0.3rem;
-  transition: 0.3s;
+  transition: all ease 0.3s;
 }
 
 .nav-links a {
@@ -75,11 +84,16 @@ a {
 }
 
 @media screen and (max-width: 770px) {
+  nav {
+    padding: 1.3rem 3rem;
+  }
+
   .check-btn {
     display: block;
   }
 
   .nav-links {
+    display: none;
     position: fixed;
     top: 4rem;
     right: 4rem;
@@ -87,7 +101,6 @@ a {
     padding: 0;
     gap: 0;
     background-color: white;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
@@ -110,7 +123,7 @@ a {
   }
 
   #check:checked ~ .nav-links {
-    display: none;
+    display: flex;
   }
 }
 
