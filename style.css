@@ -21,7 +21,7 @@ body {
 
 /* Navbar */
 
-nav {
+nav{
   position: absolute;
   top: 0;
   left: 0;
@@ -190,4 +190,53 @@ a {
   justify-content: center;
   align-items: center;
   gap: 5px;
+}
+
+/* Mobile Navigation */
+
+.nav-hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 480px){
+
+  nav{
+    gap: 2rem;
+  }
+
+  .nav-toggle{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 250%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 65%;
+    min-height: 170px;
+    background-color: #fff;
+
+    gap: 3.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+  }
+
+  .nav-toggle a{
+    position: absolute;
+    margin-left: .5rem;
+    font-size: 16px;
+    color: black;
+  }
+
+  .nav-hamburger{
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-links.visible {
+    display: flex;
+  }
 }
