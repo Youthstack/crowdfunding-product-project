@@ -43,13 +43,13 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 0.5rem 12vw;
+  padding: 1.5rem 12vw;
   justify-content: space-between;
 }
 
 .nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 2.2rem;
   align-items: center;
   padding: 1.6rem 0;
   border-radius: 0.5rem;
@@ -140,7 +140,7 @@ a {
   position: absolute;
   left: 26vw;
   right: 26vw;
-  top: 14vh;
+  top: clamp(80px, 4vh + 15vw, 19rem);
   padding-bottom: 2rem;
 }
 
